@@ -61,10 +61,13 @@ program
 program.
   command("test")
   .description("Run tests")
-  .option("-a, --all")
+  .option("-a, --all", "Run all tests")
+  .option("-p, --problem <PROBLEM>", "Run tests folder containing the provided path")
   .action(async (options) => {
     if (options.all) {
       const child = spawn("yarn", ["test"], { cwd: ABSOLUTE_PATH, stdio: "inherit" });
+    } else if (options.problem) {
+      const child = spawn("yarn", ["test", `--testPathPattern=".*${options.problem}.*"`], { cwd: ABSOLUTE_PATH, stdio: "inherit"});
     } else {
       const choices = findAllProblems().map(([diff, name]) => {
         return {
@@ -72,9 +75,12 @@ program.
           value: `.*${name}.*`
         }
       })
+      if (!choices.length) {
+        console.log(chalk.cyan("No problems to test!"));
+        process.exit(0);
+      }
       const testPathPattern = await select({ message: "Choose a problem to test", choices });
       const child = spawn("yarn", ["test", `--testPathPattern="${testPathPattern}"`], { cwd: ABSOLUTE_PATH, stdio: "inherit"});
-      
     }
   })
 
