@@ -17,6 +17,7 @@ In order to solve this, I created this CLI and repo that does two things:
 ### Easy Problems
 - [Two Sum](./Easy%20-%20Two%20Sum/docs.md)
 - [Find Closest Number To Zero](./Easy%20-%20Find%20Closest%20Number%20To%20Zero/docs.md)
+- [Merge Strings Alternately](./Easy%20-%20Merge%20Strings%20Alternately/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
