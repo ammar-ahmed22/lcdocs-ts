@@ -1,6 +1,6 @@
-export function twoSum(nums: number[], target: number): number[] {
-    return []
-};
+export type ArgsType = [number, number]
+export type ReturnType = number;
 
-
-console.log(twoSum([1,2, 3], 4));
+export function add(a: number, b: number): number {
+  return a + b;
+}

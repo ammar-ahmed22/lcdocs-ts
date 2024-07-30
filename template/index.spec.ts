@@ -1,15 +1,21 @@
-import { twoSum } from "."
+import { add, ArgsType, ReturnType } from "."
 
-describe("TwoSum", () => {
-  it("solves the first test case", () => {
-    expect(twoSum([2,7,11,15], 9)).toBe([0, 1])
+
+describe("Add", () => {
+  let testCases: ArgsType[] = []
+  let results: ReturnType[] = []
+  it("has the same number of results as tests", () => {
+    expect(testCases.length).toEqual(results.length);
   })
 
-  it("solves the second test case", () => {
-    expect(twoSum([3,2,4], 6)).toBe([1, 2])
+  it("solves the test cases", () => {
+    for (let i = 0; i < testCases.length; i++) {
+      let args = testCases[i];
+      let result = results[i];
+      expect(add(...args)).toBe(result);
+      // Below can be used for arrays where the order does not matter
+      // expect(add(...args)).toBeEqualUnordered(result);
+    }
   })
-
-  it("solves the third test case", () => {
-    expect(twoSum([3,2,4], 6)).toBe([1, 2])
-  })
+  
 })
