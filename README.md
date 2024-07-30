@@ -15,6 +15,7 @@ In order to solve this, I created this CLI and repo that does two things:
 
 ## Problem List
 ### Easy Problems
+- (Two Sum)[./Easy%20-%20Two%20Sum/docs.md]
 <!-- Easy Add here -->
 
 ### Medium Problems

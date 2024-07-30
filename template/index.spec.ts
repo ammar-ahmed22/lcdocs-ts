@@ -13,8 +13,6 @@ describe("Add", () => {
       let args = testCases[i];
       let result = results[i];
       expect(add(...args)).toBe(result);
-      // Below can be used for arrays where the order does not matter
-      // expect(add(...args)).toBeEqualUnordered(result);
     }
   })
   
