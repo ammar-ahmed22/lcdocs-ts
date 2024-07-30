@@ -1,0 +1,27 @@
+{
+  "name": "lcdocs-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "bin": {
+    "lcdocs-ts": "./dist/cli.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prebuild": "yarn clean",
+    "link-cli": "yarn build && chmod +x ./dist/cli.js && yarn link",
+    "test": "jest"
+  }
+}
