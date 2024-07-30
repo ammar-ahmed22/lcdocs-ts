@@ -5,8 +5,10 @@ import { input, select, number, confirm } from "@inquirer/prompts";
 import { parseFunctionSignature } from "./utils/parse";
 import { createProblemDir } from "./utils/create"
 import type { Difficulty } from "./utils/create"
+import { doesProblemExist, ABSOLUTE_PATH, findAllProblems } from "./utils/file"
 import fs from "fs";
 import path from "path";
+import { spawn } from "child_process";
 
 const program = new Command();
 
@@ -21,7 +23,12 @@ program
 .description("Creates a problem to test and document")
 .action(async () => {
 
-  const problemName = await input({ message: "Enter the problem name"});
+  const problemName = await input({ message: "Enter the problem name:"});
+  if (doesProblemExist(problemName)) {
+    console.log(chalk.red(`Problem: '${problemName}' already exists!`));
+    console.log("Exiting...");
+    process.exit(1);
+  }
   const difficulty = await select({ 
     message: "What is the difficulty of the problem?",
     choices: [
@@ -39,7 +46,7 @@ program
       }
     ]
   }) as Difficulty;
-  const functionSignature = await input({ message: "Provide the function signature (TypeScript)"});
+  const functionSignature = await input({ message: "Provide the function signature (TypeScript):"});
   const [functionName, argsTypes, returnType ] = parseFunctionSignature(functionSignature);
   createProblemDir(problemName, difficulty, {
     functionSignature,
@@ -47,20 +54,28 @@ program
     argsTypes,
     returnType
   });
-  // let isTestCase = await confirm({ message: "Would you like to provide a test case?"});;
-  // let testCases: {args: string[], result: string}[] = [];
-  // while(isTestCase) {
-  //   console.log(`Test Case #${testCases.length + 1}`);
-  //   let args = await input({ message: "Provide the arguments as a comma-separated list"});
-  //   let result = await input({ message: "Provide the expected result"});
-  //   testCases.push({
-  //     args: args.split(",").map(a => a.trim()), // THIS DOES NOT WORK BECAUSE ARRAYS WILL HAVE COMMAS!!
-  //     result
-  //   })
-  //   isTestCase = await confirm({ message: "Would you to provide another test case?"});
-  // }
-
-  console.log({ problemName, difficulty, functionName, argsTypes, returnType, });
+  
+  console.log(chalk.green(`Created problem: '${problemName}'`));
 })
+
+program.
+  command("test")
+  .description("Run tests")
+  .option("-a, --all")
+  .action(async (options) => {
+    if (options.all) {
+      const child = spawn("yarn", ["test"], { cwd: ABSOLUTE_PATH, stdio: "inherit" });
+    } else {
+      const choices = findAllProblems().map(([diff, name]) => {
+        return {
+          name,
+          value: `.*${name}.*`
+        }
+      })
+      const testPathPattern = await select({ message: "Choose a problem to test", choices });
+      const child = spawn("yarn", ["test", `--testPathPattern="${testPathPattern}"`], { cwd: ABSOLUTE_PATH, stdio: "inherit"});
+      
+    }
+  })
 
 program.parse(process.argv);

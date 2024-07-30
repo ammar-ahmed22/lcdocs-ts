@@ -1,23 +1,9 @@
 import fs from "fs";
 import path from "path";
+import { problemDirPath, ABSOLUTE_PATH, copyDirectory } from "./file"
 
-export const ABSOLUTE_PATH = "/Users/ammar/Documents/Projects/lcdocs";
 
 export type Difficulty = "easy" | "medium" | "hard";
-
-export function copyDirectory(src: fs.PathLike, dest: fs.PathLike) {
-  fs.mkdirSync(dest, { recursive: true });
-  const entries = fs.readdirSync(src, { withFileTypes: true });
-  for (const entry of entries) {
-    const srcPath = path.join(src.toString(), entry.name);
-    const destPath = path.join(dest.toString(), entry.name);
-    if (entry.isDirectory()) {
-      copyDirectory(srcPath, destPath);
-    } else {
-      fs.copyFileSync(srcPath, destPath);
-    }
-  }
-}
 
 type ProblemParams = {
   functionSignature: string,
@@ -26,10 +12,6 @@ type ProblemParams = {
   returnType: string
 }
 
-function problemDirPath(name: string, difficulty: Difficulty){
-  const dirName = `${difficulty[0].toUpperCase() + difficulty.slice(1)} - ${name}`;
-  return path.join(ABSOLUTE_PATH, dirName);
-}
 
 export function createProblemDir(name: string, difficulty: Difficulty, params: ProblemParams) {
   const dirPath = problemDirPath(name, difficulty);
@@ -75,3 +57,4 @@ function updateDocs(name: string, difficulty: Difficulty) {
   fileContents = fileContents.replace("# Add", `# ${name}`);
   fs.writeFileSync(filePath, fileContents);
 }
+
