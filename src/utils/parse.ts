@@ -15,3 +15,7 @@ export function parseFunctionSignature(sig: string): [string, string[], string] 
 
   return [name, args, returnType];
 }
+
+export function toTitleCase<T extends string>(str: T): string {
+  return str[0].toUpperCase() + str.slice(1);
+}

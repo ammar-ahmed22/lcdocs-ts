@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { problemDirPath, ABSOLUTE_PATH, copyDirectory } from "./file"
+import { toTitleCase } from "./parse";
 
 
 export type Difficulty = "easy" | "medium" | "hard";
@@ -20,6 +21,7 @@ export function createProblemDir(name: string, difficulty: Difficulty, params: P
   updateProblem(name, difficulty, params.functionSignature, params.argsTypes, params.returnType);
   updateTest(name, difficulty, params.functionName);
   updateDocs(name, difficulty);
+  updateReadme(name, difficulty);
 }
 
 function updateProblem(name: string, difficulty: Difficulty, functionSignature: string, argsType: string[], returnType: string) {
@@ -58,3 +60,11 @@ function updateDocs(name: string, difficulty: Difficulty) {
   fs.writeFileSync(filePath, fileContents);
 }
 
+function updateReadme(name: string, difficulty: Difficulty) {
+  const filePath = path.join(ABSOLUTE_PATH, "README.md");
+  let fileContents = fs.readFileSync(filePath, "utf-8");
+  let replaceString = `<!-- ${toTitleCase(difficulty)} Add here -->`
+  let dirName = `${toTitleCase(difficulty)} - ${name}`;
+  fileContents = fileContents.replace(replaceString, `- (${name})[./${encodeURIComponent(dirName)}/docs.md]\n${replaceString}`);
+  fs.writeFileSync(filePath, fileContents);
+}

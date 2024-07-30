@@ -1,11 +1,12 @@
 import path from "path";
 import fs from "fs";
 import type { Difficulty } from "./create";
+import { toTitleCase} from "./parse";
 
 export const ABSOLUTE_PATH = "/Users/ammar/Documents/Projects/lcdocs";
 
 export function problemDirPath(name: string, difficulty: Difficulty){
-  const dirName = `${difficulty[0].toUpperCase() + difficulty.slice(1)} - ${name}`;
+  const dirName = `${toTitleCase(difficulty)} - ${name}`;
   return path.join(ABSOLUTE_PATH, dirName);
 }
 
