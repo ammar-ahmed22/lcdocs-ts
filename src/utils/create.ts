@@ -65,6 +65,6 @@ function updateReadme(name: string, difficulty: Difficulty) {
   let fileContents = fs.readFileSync(filePath, "utf-8");
   let replaceString = `<!-- ${toTitleCase(difficulty)} Add here -->`
   let dirName = `${toTitleCase(difficulty)} - ${name}`;
-  fileContents = fileContents.replace(replaceString, `- (${name})[./${encodeURIComponent(dirName)}/docs.md]\n${replaceString}`);
+  fileContents = fileContents.replace(replaceString, `- [${name}](./${encodeURIComponent(dirName)}/docs.md)\n${replaceString}`);
   fs.writeFileSync(filePath, fileContents);
 }
