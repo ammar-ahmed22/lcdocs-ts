@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import chalk from "chalk";
-import { input, select, number, confirm } from "@inquirer/prompts";
+import { input, select, search } from "@inquirer/prompts";
 import { parseFunctionSignature } from "./utils/parse";
 import { createProblemDir } from "./utils/create"
 import type { Difficulty } from "./utils/create"
@@ -79,7 +79,17 @@ program.
         console.log(chalk.cyan("No problems to test!"));
         process.exit(0);
       }
-      const testPathPattern = await select({ message: "Choose a problem to test", choices });
+      const testPathPattern = await search({
+        message: "Choose a problem to test:",
+        source(term, opt) {
+          if (!term) {
+            return choices;
+          }
+          return choices.filter((choice) => {
+            return choice.name.toLowerCase().includes(term.toLowerCase());
+          });
+        },
+      })
       const child = spawn("yarn", ["test", `--testPathPattern="${testPathPattern}"`], { cwd: ABSOLUTE_PATH, stdio: "inherit"});
     }
   })
