@@ -27,6 +27,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Product of Array Except Self](./Medium%20-%20Product%20of%20Array%20Except%20Self/docs.md)
 - [Merge Intervals](./Medium%20-%20Merge%20Intervals/docs.md)
 - [Spiral Matrix](./Medium%20-%20Spiral%20Matrix/docs.md)
+- [Rotate Image](./Medium%20-%20Rotate%20Image/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
