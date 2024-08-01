@@ -25,6 +25,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Contains Duplicate](./Easy%20-%20Contains%20Duplicate/docs.md)
 - [Ransom Note](./Easy%20-%20Ransom%20Note/docs.md)
 - [Majority Element](./Easy%20-%20Majority%20Element/docs.md)
+- [Squares of a Sorted Array](./Easy%20-%20Squares%20of%20a%20Sorted%20Array/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
