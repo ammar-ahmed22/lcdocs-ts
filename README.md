@@ -31,6 +31,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Merge Intervals](./Medium%20-%20Merge%20Intervals/docs.md)
 - [Spiral Matrix](./Medium%20-%20Spiral%20Matrix/docs.md)
 - [Rotate Image](./Medium%20-%20Rotate%20Image/docs.md)
+- [Valid Sudoku](./Medium%20-%20Valid%20Sudoku/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
