@@ -32,6 +32,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Spiral Matrix](./Medium%20-%20Spiral%20Matrix/docs.md)
 - [Rotate Image](./Medium%20-%20Rotate%20Image/docs.md)
 - [Valid Sudoku](./Medium%20-%20Valid%20Sudoku/docs.md)
+- [Group Anagrams](./Medium%20-%20Group%20Anagrams/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
