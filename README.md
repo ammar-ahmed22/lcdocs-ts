@@ -27,6 +27,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Majority Element](./Easy%20-%20Majority%20Element/docs.md)
 - [Squares of a Sorted Array](./Easy%20-%20Squares%20of%20a%20Sorted%20Array/docs.md)
 - [Reverse String](./Easy%20-%20Reverse%20String/docs.md)
+- [Valid Palindrome](./Easy%20-%20Valid%20Palindrome/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
