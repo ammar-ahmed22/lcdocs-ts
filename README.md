@@ -24,6 +24,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Jewels and Stones](./Easy%20-%20Jewels%20and%20Stones/docs.md)
 - [Contains Duplicate](./Easy%20-%20Contains%20Duplicate/docs.md)
 - [Ransom Note](./Easy%20-%20Ransom%20Note/docs.md)
+- [Majority Element](./Easy%20-%20Majority%20Element/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
