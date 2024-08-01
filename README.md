@@ -21,6 +21,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Roman To Integer](./Easy%20-%20Roman%20To%20Integer/docs.md)
 - [Is Subsequence](./Easy%20-%20Is%20Subsequence/docs.md)
 - [Best Time To Buy And Sell Stock](./Easy%20-%20Best%20Time%20To%20Buy%20And%20Sell%20Stock/docs.md)
+- [Jewels and Stones](./Easy%20-%20Jewels%20and%20Stones/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems

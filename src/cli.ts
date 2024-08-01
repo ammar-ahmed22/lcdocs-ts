@@ -94,4 +94,32 @@ program.
     }
   })
 
+program.command("run")
+  .description("Run a specific problem")
+  .action(async () => {
+    const choices = findAllProblems().map(([diff, name]) => {
+      return {
+        name,
+        value: `${diff} - ${name}/index.ts`
+      }
+    });
+    if (!choices.length) {
+      console.log(chalk.cyan("No problems to run!"));
+      process.exit(0);
+    }
+
+    const filePath = await search({
+      message: "Choose a problem to run:",
+      source(term, opt) {
+        if (!term) {
+          return choices
+        }
+        return choices.filter(choice => {
+          return choice.name.toLowerCase().includes(term.toLowerCase())
+        })
+      },
+    })
+
+    const child = spawn("ts-node", [filePath], { cwd: ABSOLUTE_PATH, stdio: "inherit" });
+  })
 program.parse(process.argv);
