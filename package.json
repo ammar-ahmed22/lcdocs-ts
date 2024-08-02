@@ -1,5 +1,5 @@
 {
-  "name": "lcdocs-ts",
+  "name": "lcdocs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "typescript": "^5.5.4"
   },
   "bin": {
-    "lcdocs-ts": "./dist/cli.js"
+    "lcdocs": "./dist/cli.js"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.3.5",
