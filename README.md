@@ -44,6 +44,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [3Sum](./Medium%20-%203Sum/docs.md)
 - [Container With Most Water](./Medium%20-%20Container%20With%20Most%20Water/docs.md)
 - [Evaluate Reverse Polish Notation](./Medium%20-%20Evaluate%20Reverse%20Polish%20Notation/docs.md)
+- [Daily Temperatures](./Medium%20-%20Daily%20Temperatures/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
