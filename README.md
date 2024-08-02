@@ -40,6 +40,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Longest Consecutive Sequence](./Medium%20-%20Longest%20Consecutive%20Sequence/docs.md)
 - [Two Sum II Input Array Is Sorted](./Medium%20-%20Two%20Sum%20II%20Input%20Array%20Is%20Sorted/docs.md)
 - [3Sum](./Medium%20-%203Sum/docs.md)
+- [Container With Most Water](./Medium%20-%20Container%20With%20Most%20Water/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
