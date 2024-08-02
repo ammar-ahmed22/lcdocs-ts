@@ -39,6 +39,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Group Anagrams](./Medium%20-%20Group%20Anagrams/docs.md)
 - [Longest Consecutive Sequence](./Medium%20-%20Longest%20Consecutive%20Sequence/docs.md)
 - [Two Sum II Input Array Is Sorted](./Medium%20-%20Two%20Sum%20II%20Input%20Array%20Is%20Sorted/docs.md)
+- [3Sum](./Medium%20-%203Sum/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
