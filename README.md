@@ -44,4 +44,5 @@ In order to solve this, I created this CLI and repo that does two things:
 <!-- Medium Add here -->
 
 ### Hard Problems
+- [Trapping Rain Water](./Hard%20-%20Trapping%20Rain%20Water/docs.md)
 <!-- Hard Add here -->
