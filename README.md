@@ -1,6 +1,11 @@
 <div align="center">
   <h1>LeetCode Docs</h1>
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
+  <p>
+    <img src="https://img.shields.io/badge/Easy_15-green?style=flat" />
+    <img src="https://img.shields.io/badge/Medium_12-yellow?style=flat" />
+    <img src="https://img.shields.io/badge/Hard_1-red?style=flat" />
+  </p>
 </div>
 
 ## Overview
