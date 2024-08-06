@@ -2,7 +2,7 @@
   <h1>LeetCode Docs</h1>
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
-    <img src="https://img.shields.io/badge/Easy_17-green?style=flat" />
+    <img src="https://img.shields.io/badge/Easy_18-green?style=flat" />
     <img src="https://img.shields.io/badge/Medium_13-yellow?style=flat" />
     <img src="https://img.shields.io/badge/Hard_1-red?style=flat" />
   </p>
@@ -38,6 +38,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Remove Duplicates from Sorted List](./Easy%20-%20Remove%20Duplicates%20from%20Sorted%20List/docs.md)
 - [Remove Duplicates from Sorted List](./Easy%20-%20Remove%20Duplicates%20from%20Sorted%20List/docs.md)
 - [Reverse Linked List](./Easy%20-%20Reverse%20Linked%20List/docs.md)
+- [Merge Two Sorted Lists](./Easy%20-%20Merge%20Two%20Sorted%20Lists/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
