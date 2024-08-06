@@ -2,7 +2,7 @@
   <h1>LeetCode Docs</h1>
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
-    <img src="https://img.shields.io/badge/Easy_19-green?style=flat" />
+    <img src="https://img.shields.io/badge/Easy_20-green?style=flat" />
     <img src="https://img.shields.io/badge/Medium_13-yellow?style=flat" />
     <img src="https://img.shields.io/badge/Hard_1-red?style=flat" />
   </p>
@@ -40,6 +40,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Reverse Linked List](./Easy%20-%20Reverse%20Linked%20List/docs.md)
 - [Merge Two Sorted Lists](./Easy%20-%20Merge%20Two%20Sorted%20Lists/docs.md)
 - [Linked List Cycle](./Easy%20-%20Linked%20List%20Cycle/docs.md)
+- [Middle of Linked List](./Easy%20-%20Middle%20of%20Linked%20List/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
