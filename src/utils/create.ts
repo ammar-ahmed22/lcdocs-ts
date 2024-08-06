@@ -80,12 +80,10 @@ function updateBadgeValues() {
   const filePath = path.join(ABSOLUTE_PATH, "README.md");
   let fileContents = fs.readFileSync(filePath, "utf-8");
   let problems = findAllProblems();
-  console.log(problems);
   let easy = 0;
   let med = 0;
   let hard = 0;
   for (let [diff, name] of problems) {
-    console.log(diff);
     if (diff === "Easy") easy++;
     if (diff === "Medium") med++;
     if (diff === "Hard") hard++;
