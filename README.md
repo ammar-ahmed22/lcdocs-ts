@@ -3,7 +3,7 @@
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
     <img src="https://img.shields.io/badge/Easy_15-green?style=flat" />
-    <img src="https://img.shields.io/badge/Medium_12-yellow?style=flat" />
+    <img src="https://img.shields.io/badge/Medium_13-yellow?style=flat" />
     <img src="https://img.shields.io/badge/Hard_1-red?style=flat" />
   </p>
 </div>
@@ -50,6 +50,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Container With Most Water](./Medium%20-%20Container%20With%20Most%20Water/docs.md)
 - [Evaluate Reverse Polish Notation](./Medium%20-%20Evaluate%20Reverse%20Polish%20Notation/docs.md)
 - [Daily Temperatures](./Medium%20-%20Daily%20Temperatures/docs.md)
+- [Min Stack](./Medium%20-%20Min%20Stack/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
