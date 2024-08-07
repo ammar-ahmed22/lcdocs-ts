@@ -28,14 +28,17 @@ You must write an algorithm that runs in `O(log n)` time.
 **Explanation**: The original array was [11,13,15,17] and it was rotated 4 times. 
 
 ## Approach
-- We can solve this by understanding that since the array is sorted and then rotated, the minimum value should be somewhere in the middle
-- We'll do a binary search but keep track of the minimum value
-- Initialize left and right pointers
-- Iterate while left <= right
-  + Calculate the middle index and update the min value with the middle value
-  + To update the pointers, we'll check if the middle value is greater than the right value
-    - If it is, this means that our minimum value (start of the original array) is on the right side
-    - Otherwise, it is on the left side
-- At the end, we'll return the minimum of the min value and the value at the left pointer because it's possible we missed that last value
+- Essentially, we are looking for the pivot index of the sort
+- We can do a binary search and compare the mid value with the right value
+  + If the mid value is greater than the right value, we know our min value is on the right side (in a sorted array, the right value should be the largest)
+    - So we set, `l = m + 1`
+  + Otherwise, we'll set `r = m + 1`
+    - We don't do `r = m + 1` because this will make us go past the min value at the end
+- Once the iteration is complete, the minimum value should be at the `l` index
 
 ## Complexity
+### Time
+- `O(logn)`
+
+### Space
+- `O(1)`

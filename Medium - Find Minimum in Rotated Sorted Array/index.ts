@@ -2,18 +2,16 @@ export type ArgsType = [number[]];
 export type ReturnType = number;
 
 export function findMin(nums: number[]): number {
-  let left = 0;
-  let right = nums.length - 1;
-  let min = Number.MAX_VALUE;
-  while(left <= right) {
-    let mid = Math.floor((left + right) / 2);
-    min = Math.min(min, nums[mid]);
-    if (nums[mid] > nums[right]) {
-      left = mid + 1;
+  let l = 0;
+  let r = nums.length - 1;
+  while(l < r) {
+    let m = Math.floor((l + r ) / 2);
+    if (nums[m] > nums[r]) {
+      l = m + 1;
     } else {
-      right = mid - 1;
+      r = m;
     }
   }
 
-  return Math.min(min, nums[left]);
+  return nums[l]
 }
