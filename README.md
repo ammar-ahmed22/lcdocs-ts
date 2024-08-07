@@ -2,7 +2,7 @@
   <h1>LeetCode Docs</h1>
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
-    <img src="https://img.shields.io/badge/Easy_22-green?style=flat" />
+    <img src="https://img.shields.io/badge/Easy_23-green?style=flat" />
     <img src="https://img.shields.io/badge/Medium_13-yellow?style=flat" />
     <img src="https://img.shields.io/badge/Hard_1-red?style=flat" />
   </p>
@@ -43,6 +43,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Middle of Linked List](./Easy%20-%20Middle%20of%20Linked%20List/docs.md)
 - [Binary Search](./Easy%20-%20Binary%20Search/docs.md)
 - [Search Insert Position](./Easy%20-%20Search%20Insert%20Position/docs.md)
+- [Valid Perfect Square](./Easy%20-%20Valid%20Perfect%20Square/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
