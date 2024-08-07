@@ -2,9 +2,9 @@
   <h1>LeetCode Docs</h1>
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
-    <img src="https://img.shields.io/badge/Easy_23-green?style=flat" />
-    <img src="https://img.shields.io/badge/Medium_15-yellow?style=flat" />
-    <img src="https://img.shields.io/badge/Hard_1-red?style=flat" />
+    <img src="https://img.shields.io/badge/23-Easy-green?style=flat" />
+    <img src="https://img.shields.io/badge/15-Medium-yellow?style=flat" />
+    <img src="https://img.shields.io/badge/1-Hard-red?style=flat" />
   </p>
 </div>
 

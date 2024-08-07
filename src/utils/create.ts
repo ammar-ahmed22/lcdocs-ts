@@ -62,8 +62,8 @@ function updateDocs(name: string, difficulty: Difficulty) {
 }
 
 function replaceBadgeValue(file: string, difficulty: Difficulty, value: number) {
-  let regex = new RegExp(`${toTitleCase(difficulty)}_\\d+`);
-  file = file.replace(regex, `${toTitleCase(difficulty)}_${value}`);
+  let regex = new RegExp(`\\d+-${toTitleCase(difficulty)}`);
+  file = file.replace(regex, `${value}-${toTitleCase(difficulty)}`);
   return file;
 }
 
