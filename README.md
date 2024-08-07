@@ -3,7 +3,7 @@
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
     <img src="https://img.shields.io/badge/23-Easy-green?style=flat" />
-    <img src="https://img.shields.io/badge/15-Medium-yellow?style=flat" />
+    <img src="https://img.shields.io/badge/16-Medium-yellow?style=flat" />
     <img src="https://img.shields.io/badge/1-Hard-red?style=flat" />
   </p>
 </div>
@@ -62,6 +62,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Min Stack](./Medium%20-%20Min%20Stack/docs.md)
 - [Search a 2D Matrix](./Medium%20-%20Search%20a%202D%20Matrix/docs.md)
 - [Find Minimum in Rotated Sorted Array](./Medium%20-%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/docs.md)
+- [Search in Rotated Sorted Array](./Medium%20-%20Search%20in%20Rotated%20Sorted%20Array/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
