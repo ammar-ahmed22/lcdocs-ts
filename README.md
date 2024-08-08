@@ -3,7 +3,7 @@
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
     <img src="https://img.shields.io/badge/24-Easy-green?style=flat" />
-    <img src="https://img.shields.io/badge/18-Medium-yellow?style=flat" />
+    <img src="https://img.shields.io/badge/19-Medium-yellow?style=flat" />
     <img src="https://img.shields.io/badge/1-Hard-red?style=flat" />
   </p>
 </div>
@@ -66,6 +66,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Search in Rotated Sorted Array](./Medium%20-%20Search%20in%20Rotated%20Sorted%20Array/docs.md)
 - [Koko Eating Bananas](./Medium%20-%20Koko%20Eating%20Bananas/docs.md)
 - [Max Consecutive Ones III](./Medium%20-%20Max%20Consecutive%20Ones%20III/docs.md)
+- [Longest Substring Without Repeating Characters](./Medium%20-%20Longest%20Substring%20Without%20Repeating%20Characters/docs.md)
 <!-- Medium Add here -->
 
 ### Hard Problems
