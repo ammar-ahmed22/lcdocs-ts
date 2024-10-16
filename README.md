@@ -2,7 +2,7 @@
   <h1>LeetCode Docs</h1>
   <p>A Node.js CLI to help me with creating testing environments for LeetCode problems with documentation.</p>
   <p>
-    <img src="https://img.shields.io/badge/24-Easy-green?style=flat" />
+    <img src="https://img.shields.io/badge/25-Easy-green?style=flat" />
     <img src="https://img.shields.io/badge/20-Medium-yellow?style=flat" />
     <img src="https://img.shields.io/badge/1-Hard-red?style=flat" />
   </p>
@@ -45,6 +45,7 @@ In order to solve this, I created this CLI and repo that does two things:
 - [Search Insert Position](./Easy%20-%20Search%20Insert%20Position/docs.md)
 - [Valid Perfect Square](./Easy%20-%20Valid%20Perfect%20Square/docs.md)
 - [Maximum Average Subarray I](./Easy%20-%20Maximum%20Average%20Subarray%20I/docs.md)
+- [Check if Array Is Sorted and Rotated](./Easy%20-%20Check%20if%20Array%20Is%20Sorted%20and%20Rotated/docs.md)
 <!-- Easy Add here -->
 
 ### Medium Problems
